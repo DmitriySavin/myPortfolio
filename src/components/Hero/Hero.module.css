@@ -1,0 +1,73 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.item {
+    width: 340px;
+    background: linear-gradient(145deg, #2b2b2b, #1f1f1f);
+    border-radius: 18px;
+    overflow: hidden;
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+.item h2 {
+    font-size: 20px;
+    margin-top: 12px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.item p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+}
+
+/* кнопочный эффект для карточки как ссылки */
+.item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.tagsDesc {
+    font-size: 12px;
+    padding: 4px 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #ddd;
+}
