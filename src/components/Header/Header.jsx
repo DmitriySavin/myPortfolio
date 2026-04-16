@@ -1,12 +1,22 @@
 import styles from "./Header.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <ul className={styles.nav}>
-        <Link to="/" className={styles.link}>Web</Link>
-        <Link to="/comments" className={styles.link}>Comments</Link>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? styles.active : styles.link)}
+        >
+          Web
+        </NavLink>
+        <NavLink
+          to="/comments"
+          className={({ isActive }) => (isActive ? styles.active : styles.link)}
+        >
+          Comments
+        </NavLink>
         {/* <Link></Link> */}
       </ul>
 
@@ -15,8 +25,18 @@ const Header = () => {
       </h2>
 
       <ul className={styles.nav}>
-        <Link to="/about" className={styles.link}>About</Link>
-        <Link to="/contact" className={styles.link}>Contact</Link>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? styles.active : styles.link)}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => (isActive ? styles.active : styles.link)}
+        >
+          Contact
+        </NavLink>
         {/* <Link></Link> */}
       </ul>
     </header>

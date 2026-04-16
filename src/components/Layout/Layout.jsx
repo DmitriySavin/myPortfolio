@@ -7,7 +7,9 @@ const Layout = () => {
     <Suspense fallback={"Loading..."}>
       <Header />
       <main>
-        <Outlet />
+        <div className="container">
+          <Outlet />
+        </div>
       </main>
 
       <Footer />
@@ -15,4 +17,4 @@ const Layout = () => {
   );
 };
 
-export default Layout
+export default Layout;

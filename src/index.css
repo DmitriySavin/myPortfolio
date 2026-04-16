@@ -1,3 +1,9 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 *,
 *::before,
 *::after {
@@ -46,6 +52,13 @@ body {
   overflow-x: hidden;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
@@ -76,6 +89,10 @@ select {
   font: inherit;
 }
 
+
+main {
+  flex: 1;
+}
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 
 .container {

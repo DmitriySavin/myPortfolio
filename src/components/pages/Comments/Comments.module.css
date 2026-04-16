@@ -1,0 +1,162 @@
+/* WRAPPER - ОБЩИЙ LAYOUT */
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* TITLE */
+.title {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* FORM WRAPPER (ТОЛЬКО ПОЗИЦИЯ) */
+.formBox {
+    display: flex;
+    justify-content: center;
+}
+
+/* COMMENTS LIST (только расстояние) */
+.comments {
+    margin-top: 10px;
+}
+.comments {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* ===== CARD ===== */
+.commentsItem {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 16px 18px;
+    backdrop-filter: blur(10px);
+    transition: all 0.25s ease;
+}
+
+.commentsItem:hover {
+    transform: translateY(-3px);
+    border-color: rgba(108, 99, 255, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== TOP ROW (name + time) ===== */
+.wrapperInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+/* NAME */
+.infoTitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* TIME */
+.time {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* MESSAGE */
+li p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* OPTIONAL: empty state */
+.empty {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+}
+
+.form {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* ===== INPUT WRAPPER ===== */
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* ===== INPUTS ===== */
+.input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+/* hover */
+.input:hover {
+    border-color: rgba(108, 99, 255, 0.4);
+}
+
+/* focus */
+.input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* placeholder */
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* ===== OPTIONAL: submit button (если добавишь позже) ===== */
+.btn {
+    margin-top: 8px;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: #6c63ff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn:hover {
+    background: #574fd6;
+    transform: translateY(-2px);
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    color: white;
+    resize: none;
+    outline: none;
+}

@@ -5,6 +5,15 @@
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    /* transition: all 0.3s ease; */
 }
 
 .logo {
@@ -45,4 +54,10 @@
 }
 .link:hover::after {
   width: 100%;
+}
+.active {
+  color: orange;
+  font-weight: 600;
+text-decoration: none;
+  opacity: 1;
 }

@@ -7,6 +7,7 @@
     padding: 60px 20px;
 }
 
+/* CARD */
 .item {
     width: 340px;
     background: linear-gradient(145deg, #2b2b2b, #1f1f1f);
@@ -24,6 +25,7 @@
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
 }
 
+/* IMAGE */
 .item img {
     width: 100%;
     height: 200px;
@@ -36,38 +38,54 @@
     transform: scale(1.05);
 }
 
-.item h2 {
-    font-size: 20px;
+/* CONTENT */
+.content {
     margin-top: 12px;
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* TITLE */
+.title {
+    font-size: 18px;
     font-weight: 600;
+    color: #ffffff;
 }
 
-.item p {
-    font-size: 14px;
-    margin-top: 8px;
+/* DESCRIPTION */
+.description {
+    font-size: 13px;
     color: rgba(255, 255, 255, 0.7);
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
-/* кнопочный эффект для карточки как ссылки */
-.item a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
+/* TAGS */
 .tags {
     display: flex;
-    gap: 8px;
-    margin-top: 10px;
     flex-wrap: wrap;
+    gap: 6px;
 }
 
-.tagsDesc {
-    font-size: 12px;
+.tag {
+    font-size: 11px;
     padding: 4px 8px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    color: #ddd;
+    border-radius: 6px;
+    background: rgba(108, 99, 255, 0.15);
+    color: #a9a3ff;
+    border: 1px solid rgba(108, 99, 255, 0.3);
+}
+
+/* STATUS LIVE */
+.statusLive {
+    font-size: 12px;
+    color: #4ade80;
+    font-weight: 500;
+}
+
+/* STATUS DEMO */
+.statusDemo {
+    font-size: 12px;
+    color: #fbbf24;
+    font-weight: 500;
 }
