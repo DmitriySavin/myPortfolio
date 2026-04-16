@@ -47,14 +47,13 @@ const Contact = () => {
       </form>
 
       <div className={styles.links}>
-        <a href="mailto:diiiimsyyyy@gmail.com">Email</a>
-        <a href="mailto:test@gmail.com">TEST EMAIL</a>
+        <a href="https://www.facebook.com/profile.php?id=100079954544425" target="_blank">
+          FaceBook
+        </a>
         <a href="https://t.me/diiiimsyyyy" target="_blank">
           Telegram
         </a>
-        <a href="https://github.com/yourgithub" target="_blank">
-          GitHub
-        </a>
+        <a href="https://github.com/DmitriySavin">GitHub</a>
       </div>
     </section>
   );

@@ -1,19 +1,29 @@
 import styles from "./Footer.module.css";
-// import { useState } from "react";
-// import { db } from "../FireBase/firebase";
-// import { collection, addDoc, getDocs } from "firebase/firestore";
-// import { nanoid } from "nanoid";
-
 
 const Footer = () => {
-
-
   return (
-    <footer>
+    <footer className={styles.footer}>
       <h2 className={styles.logo}>
         Dmitriy <span className={styles.logoSec}>Savin</span>
       </h2>
-     
+
+      <p className={styles.cta}>
+        Let’s work together
+      </p>
+
+      <div className={styles.links}>
+        <a href="https://www.facebook.com/profile.php?id=100079954544425">FaceBook</a>
+        <a href="https://t.me/diiiimsyyyy" target="_blank" rel="noreferrer">
+          Telegram
+        </a>
+        <a href="https://github.com/DmitriySavin" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      </div>
+
+      <p className={styles.status}>
+        Available for freelance work
+      </p>
     </footer>
   );
 };

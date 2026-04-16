@@ -1,9 +1,24 @@
 import styles from "./Header.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link} from "react-router-dom";
+import { FaAlignJustify } from "react-icons/fa";
+import { useState } from "react";
+import Modal from "./Modal/Modal";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+  
+  const closeModal = (close) => {
+    setIsOpen(close)
+  }
+
   return (
     <header className={styles.header}>
+      {isOpen && <Modal closeModal={closeModal} />}
+
       <ul className={styles.nav}>
         <NavLink
           to="/"
@@ -20,9 +35,9 @@ const Header = () => {
         {/* <Link></Link> */}
       </ul>
 
-      <h2 className={styles.logo}>
+      <Link to="/" className={styles.logo}>
         Dmitriy <span className={styles.logoSec}>Savin</span>
-      </h2>
+      </Link>
 
       <ul className={styles.nav}>
         <NavLink
@@ -39,6 +54,9 @@ const Header = () => {
         </NavLink>
         {/* <Link></Link> */}
       </ul>
+      <button type="button" className={styles.burger} onClick={openModal}>
+        <FaAlignJustify color="white" size={20} />
+      </button>
     </header>
   );
 };

@@ -2,6 +2,7 @@ import kebab from "../../assets/kebab.png";
 import webstudio from "../../assets/webstudio.png";
 import weatherDashboard from "../../assets/weatherDashboard.png";
 import eventBooster from "../../assets/eventBooster.png";
+import headphones from "../../assets/headphones.png";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
@@ -22,8 +23,8 @@ const Hero = () => {
             <h2 className={styles.title}>Web Studio</h2>
 
             <p className={styles.description}>
-              Multi-section website focused on layout structure, responsive design
-              and reusable components.
+              Multi-section website focused on layout structure, responsive
+              design and reusable components.
             </p>
 
             <div className={styles.tags}>
@@ -98,7 +99,7 @@ const Hero = () => {
         {/* EVENT BOOSTER */}
         <li className={styles.item}>
           <a
-            href="https://github.com/DmitriySavin"
+            href="https://github.com/DmitriySavin/eventboosterproject.git"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -121,8 +122,35 @@ const Hero = () => {
             </div>
 
             <p className={styles.statusDemo}>Demo</p>
+           
           </div>
         </li>
+         <li className={styles.item}>
+              <a
+                href="https://github.com/DmitriySavin/headphones1.git"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={headphones} alt="headphones" />
+              </a>
+
+              <div className={styles.content}>
+                <h2 className={styles.title}>Headphones</h2>
+
+                <p className={styles.description}>
+                  Product landing page for headphones with a focus on modern layout, visual hierarchy and responsive design.
+                </p>
+
+                <div className={styles.tags}>
+                  <span className={styles.tag}>HTML</span>
+                  <span className={styles.tag}>SCSS</span>
+                  <span className={styles.tag}>JavaScript</span>
+                  <span className={styles.tag}>parcel</span>
+                </div>
+
+                <p className={styles.statusDemo}>Demo</p>
+              </div>
+            </li>
       </ul>
     </section>
   );
