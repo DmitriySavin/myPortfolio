@@ -10,7 +10,7 @@ const Hero = () => {
     <section id="hero">
       <ul className={styles.hero}>
         {/* WEB STUDIO */}
-        <li className={styles.item}>
+        {/* <li className={styles.item}>
           <a
             href="https://dmitriysavin.github.io/Web-studio-SASS/"
             target="_blank"
@@ -37,7 +37,6 @@ const Hero = () => {
           </div>
         </li>
 
-        {/* KEBAB LANDING */}
         <li className={styles.item}>
           <a
             href="https://dmitriysavin.github.io/HighvisitkaLanding/"
@@ -66,7 +65,7 @@ const Hero = () => {
           </div>
         </li>
 
-        {/* WEATHER APP */}
+
         <li className={styles.item}>
           <a
             href="https://github.com/DmitriySavin/TheWeatherProject"
@@ -96,7 +95,6 @@ const Hero = () => {
           </div>
         </li>
 
-        {/* EVENT BOOSTER */}
         <li className={styles.item}>
           <a
             href="https://github.com/DmitriySavin/eventboosterproject.git"
@@ -150,7 +148,9 @@ const Hero = () => {
 
                 <p className={styles.statusDemo}>Demo</p>
               </div>
-            </li>
+            </li> */}
+      <li><h1>Clear</h1></li>
+      
       </ul>
     </section>
   );
